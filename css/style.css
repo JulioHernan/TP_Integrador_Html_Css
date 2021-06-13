@@ -1,0 +1,176 @@
+header {
+    background-image: url(../img/header.jpg);
+    width: 100%;
+    height: 700px;
+    display:flexbox
+}
+header .logo {
+    width: 12em;
+    margin: 40px 20px;
+
+}
+header h2 {
+    color: white;
+    margin: 0px 20px;
+    padding-bottom: 40px;
+}
+header .arriba {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 400px;
+
+}
+.arriba a {
+    color: white;
+}
+h4 {
+    margin-top: 30px;
+    padding: 20px;
+    text-align: center;
+    font-size: 2em;
+}
+h5 {
+    color: #228B22;
+}
+.todas{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+    
+}
+.boton {
+    display:flex;
+    color: #fff;
+    justify-content: center;
+    padding: 15px 34px;
+    font-weight: 600;
+}
+.boton.boton-verde {
+    padding: 15px 40px;
+    background-color: #228B22;
+    margin-top: 30px;
+
+}
+.boton.boton-naranja {
+
+  background-color: orange;
+
+}
+.container{
+    padding: 0 5px 0 5px; /*arriba-> derecha -> abajo -> izquierda */
+    width: 1140;
+    margin: 0 auto 0 auto;
+   
+}
+.container-fluid{
+    padding: 0 5px 0 5px;
+    width: 100%;
+}
+.row{
+    margin-left: -15px;
+    margin-right:-15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+.columna{
+    padding: 0 10px 0 10px;
+    
+}
+.columna-33{
+   width: 33.33%; 
+}
+.columna-50{
+    width: 50%;
+    display:flex;
+    justify-content: space-evenly;
+}
+.seccion{
+    padding:60px 0px 60px 0px;
+}
+.comodidades {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 10px
+}
+.cuadrado-perfecto{
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;/*En relación al ancho*/
+}
+#servicios .bloque-contenido-servicio {
+    padding: 25px;
+    background-color: rgb(241, 239, 239);
+}
+#servicios .bloque-contenido-servicio  h2 {
+    font-size: 1.5em;
+}
+#servicios .bloque-servicio .bloque-img-servicio{
+    width: 100%;
+    padding-bottom: 100%;
+    position: relative;
+}
+#servicios .bloque-servicio .bloque-img-servicio img{
+    width: 100%; 
+    position: absolute;
+    height: 100%;
+    object-fit:cover; /*Para que no se deforme, objeto cubre de la mejor manera*/
+    object-position: center;
+}
+
+#nosotros .bloque-img-servicio{
+    display: flex;
+    justify-content: center;
+}
+
+#nosotros .bloque-contenido-servicio {
+    display: block;
+    text-align: center;
+}
+#nosotros .bloque-contenido-servicio h2 {
+    padding: 40px 0px 20px 0px;
+    font-weight: bold;
+}
+#contacto  {
+    background-image: url(../img/encuentra.jpg); 
+    width: 100%;
+    height: 600px;
+    display:flexbox
+}
+#contacto .container h2{
+    color: white;
+    font-weight: bold;
+    padding-left: 30px;
+    padding-top: 120px;
+}
+#contacto .container p {
+    padding: 40px 30px;
+    color: #fff;
+    font-weight: 600;
+}
+#contacto .boton.boton-naranja {
+    margin-left: 30px;
+    width: 200px;
+}
+footer, footer a{
+    background-color: #1e1e1e;
+    color: #fff;
+    padding-bottom: 0;
+}
+
+footer .row {
+    align-items: baseline;
+}
+
+@media(max-width:767px)
+{
+    .container
+    {
+        width: 100%;
+    }
+    .columna-mobile-100
+    {
+        width: 100%;
+    }
+}
